@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rory The Gnome | Computer Engineering Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div id="starfield"></div>
+    
+    <!-- Floating Particles -->
+    <div id="particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <span class="pixel-text">RORY_THE_GNOME.exe</span>
+        </div>
+        <div class="nav-menu">
+            <a href="#home" class="nav-link" data-section="home">
+                <span class="nav-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <span class="nav-icon">👨‍💻</span>
+                <span>About</span>
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <span class="nav-icon">⚡</span>
+                <span>Projects</span>
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <span class="nav-icon">🛠️</span>
+                <span>Skills</span>
+            </a>
+            <!--
+            <a href="#blog" class="nav-link" data-section="blog">
+                <span class="nav-icon">📝</span>
+                <span>Blog</span>
+            </a>
+            -->
+            <a href="#contact" class="nav-link" data-section="contact">
+                <span class="nav-icon">📡</span>
+                <span>Contact</span>
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="glitch-wrapper">
+                        <h1 class="hero-title glitch" data-text="Rory The Gnome">Rory The Gnome</h1>
+                    </div>
+                    <div class="hero-subtitle">
+                        <span class="typing-text">Computer Engineering Student & Code Architect</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="hero-description">
+                        <p>One small step for mankind, one giant leap for me 🚀</p>
+                        <p class="subtitle">Where creativity meets code in a galaxy far, far away...</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                            <span>View Projects</span>
+                            <div class="btn-particles"></div>
+                        </button>
+                        <button class="btn btn-secondary" onclick="downloadResume()">
+                            <span>Download Resume(DO NOT click)</span>
+                            <div class="btn-particles"></div>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="minecraft-character">
+                        <div class="character-head"></div>
+                        <div class="character-body"></div>
+                        <div class="character-arms">
+                            <div class="arm left"></div>
+                            <div class="arm right"></div>
+                        </div>
+                        <div class="character-legs">
+                            <div class="leg left"></div>
+                            <div class="leg right"></div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-block" style="--delay: 0s">⚡</div>
+                        <div class="floating-block" style="--delay: 1s">🔧</div>
+                        <div class="floating-block" style="--delay: 2s">💻</div>
+                        <div class="floating-block" style="--delay: 3s">🚀</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-text">About the Gnome</span>
+                    <div class="title-underline"></div>
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span class="btn-close"></span>
+                                    <span class="btn-minimize"></span>
+                                    <span class="btn-maximize"></span>
+                                </div>
+                                <span class="terminal-title">about_me.exe</span>
+                            </div>
+                            <div class="terminal-body">
+                                <p class="terminal-line">
+                                    <span class="prompt">gnome@universe:~$</span>
+                                    <span class="command">whoami</span>
+                                </p>
+                                <p class="terminal-output">
+                                    A passionate Computer Engineering student who believes that the best code 
+                                    is written with a touch of rebellion and a lot of creativity. I'm the type 
+                                    who stays up until 3 AM debugging code just because "it's almost working!"
+                                </p>
+                                <p class="terminal-line">
+                                    <span class="prompt">gnome@universe:~$</span>
+                                    <span class="command">cat interests.txt</span>
+                                </p>
+                                <p class="terminal-output">
+                                    🎮 Building games that make people smile (or angry cry)<br>
+                                    🤖 Creating AI (optionally) that doesn't want to take over the world<br>
+                                    🔧 Hardware hacking and IoT adventures<br>
+                                    🌟 Open source contributions<br>
+                                    🎨 Digital art and creative coding<br>
+                                    💻 Crafting software solutions that are elegant, efficient, and a little bit magical<br>
+                                    📊 Turning messy data into beautiful, meaningful insights<br>
+                                    🧠 Exploring machine learning models that actually make sense<br>
+                                    🛠 Automating the boring stuff so I can focus on the fun stuff<br>
+                                    📈 Visualizing data in ways that tell a story (and sometimes make people say “wow”)
+                                </p>
+                                <p class="terminal-line">
+                                    <span class="prompt">gnome@universe:~$</span>
+                                    <span class="command">echo $MOTTO</span>
+                                </p>
+                                <p class="terminal-output">
+                                    "Code like nobody's watching, debug like everybody is!"
+                                </p>
+                                <span class="cursor-blink">_</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">📚</div>
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Years of Study</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">💻</div>
+                            <div class="stat-number" data-target="43">0</div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">☕</div>
+                            <div class="stat-number" data-target="1837">0</div>
+                            <div class="stat-label">Cups of Coffee</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🐛</div>
+                            <div class="stat-number" data-target="999">0</div>
+                            <div class="stat-label">Bugs Squashed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-text">Some of My Public Projects</span>
+                    <div class="title-underline"></div>
+                </h2>
+                <div class="projects-grid">
+
+                    <!--
+<div class="project-card" data-tech="HTML, CSS, JavaScript">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">⚖️</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://budanhukuk.com/" target="_blank" class="btn btn-small">View Live</a>
+                                <a href="https://github.com/roryTheGnome/Budan_Law_Website" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Budan Law Website</h3>
+                            <p class="project-description">
+                                A professional static website built for a law firm client, focusing on clean design and clear navigation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+-->
+
+                    <!-- Budan Law Website -->
+                    <div class="project-card" data-tech="HTML, CSS, JavaScript">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">⚖️</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://budanhukuk.com/" target="_blank" class="btn btn-small">View Live</a>
+                                <a href="https://github.com/roryTheGnome/Budan_Law_Website" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Budan Law Website</h3>
+                            <p class="project-description">
+                                A professional static website built for a law firm client, focusing on clean design and clear navigation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Gnome's Eyes -->
+                    <div class="project-card" data-tech="HTML, CSS, JavaScript">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">👁️</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://gnomes-eyes.netlify.app/" target="_blank" class="btn btn-small">View Live</a>
+                                <a href="https://github.com/roryTheGnome/galary" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Gnome's Eyes</h3>
+                            <p class="project-description">
+                                A small experimental static site exploring creative visuals and interactive effects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pacman -->
+                    <div class="project-card" data-tech="Java, Swing">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🟡</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/Pacman" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Pacman</h3>
+                            <p class="project-description">
+                                A faithful Java-based replica of the classic arcade game with smooth animations and collision logic.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Nothing Game -->
+                    <div class="project-card" data-tech="JavaScript">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🕳️</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/Nothing_Game" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Nothing Game</h3>
+                            <p class="project-description">
+                                My attempt at recreating the "Nothing" game from stream, focused on minimal mechanics and unexpected outcomes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- AntiPlague Game -->
+                    <div class="project-card" data-tech="Python">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🦠</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/AntiPlague_Game" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AntiPlague Game</h3>
+                            <p class="project-description">
+                                A text-based twist on the popular plague game concept, focusing on strategic disease prevention.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Chat Rooms -->
+                    <div class="project-card" data-tech="Node.js, Socket.io">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">💬</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/ChatRooms" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Chat Rooms</h3>
+                            <p class="project-description">
+                                A nostalgic recreation of old-school chat rooms with real-time messaging and a unique twist.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Flappy Bird -->
+                    <div class="project-card" data-tech="JavaScript, Canvas">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🐦</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/Flappy_Bird" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Flappy Bird</h3>
+                            <p class="project-description">
+                                A quick 15-minute challenge to recreate the famous Flappy Bird game using pure JavaScript and Canvas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Monkey Typer -->
+                    <div class="project-card" data-tech="JavaScript">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🐒</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/MonkeyTyper" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Monkey Typer</h3>
+                            <p class="project-description">
+                                My playful take on the classic Monkey Typer concept, built with humorous prompts and speed challenges.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Model Wizard -->
+                    <div class="project-card" data-tech="Java, Groovy, Swing">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🪄</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/ModelWizard" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Model Wizard</h3>
+                            <p class="project-description">
+                                A flexible Java application for loading and processing tabular data with CLI, GUI, and Groovy scripting support.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Library System -->
+                    <div class="project-card" data-tech="JavaScript, APIs">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">📚</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/Library_System" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Library System</h3>
+                            <p class="project-description">
+                                A fun experiment using public APIs to create an interactive online library catalog.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tic Tac Toe with JNL -->
+                    <div class="project-card" data-tech="Java, JNI, C++">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">❌</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/TicTacToe_withJNL" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tic Tac Toe with JNL</h3>
+                            <p class="project-description">
+                                A classic Tic Tac Toe game built as a Java-Native Interface experiment with the logic handled in C++.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Basic ERP System -->
+                    <div class="project-card" data-tech="JavaScript, APIs">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🏢</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/roryTheGnome/Basic_ERP_System" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Basic ERP System</h3>
+                            <p class="project-description">
+                                A simple ERP system concept for managing basic business processes, created as a practice project.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-text">Power-Ups & Abilities</span>
+                    <div class="title-underline"></div>
+                </h2>
+                <div class="skills-container">
+
+                    <!-- Programming & Backend -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">💻</span>
+                            Programming & Backend
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-level="90">
+                                <div class="skill-icon">☕</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 90%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="85">
+                                <div class="skill-icon">💻</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">C / C++ / C# (.NET, JNI)</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 80%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="82">
+                                <div class="skill-icon">🐍</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Python (Scripting & Automation)</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 85%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="80">
+                                <div class="skill-icon">🗄️</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL / Database Design</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 85%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="78">
+                                <div class="skill-icon">📦</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Basic ERP Systems</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 75%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web & Mobile -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">🌐</span>
+                            Web & Mobile
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-level="85">
+                                <div class="skill-icon">⚛️</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">React</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 75%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="80">
+                                <div class="skill-icon">🎯</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Flutter (Cross-platform Apps)</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 80%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="78">
+                                <div class="skill-icon">🎨</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML, CSS & SASS</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 85%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Hardware -->
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">🛠️</span>
+                            Tools & Hardware
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-level="88">
+                                <div class="skill-icon">🐙</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 90%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="82">
+                                <div class="skill-icon">🎮</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Game Dev</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 70%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="80">
+                                <div class="skill-icon">🔌</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Arduino Projects</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 70%"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-level="75">
+                                <div class="skill-icon">🐧</div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Linux</span>
+                                    <div class="skill-bar"><div class="skill-progress" style="--width: 75%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--For phase 2-->
+        <!-- Blog Section
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-text">Digital Chronicles</span>
+                    <div class="title-underline"></div>
+                </h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <span class="blog-icon">🚀</span>
+                            </div>
+                            <div class="blog-date">Dec 15, 2024</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Building My First Neural Network</h3>
+                            <p class="blog-excerpt">
+                                Journey into the world of AI and machine learning, starting with a simple neural network
+                                that can recognize handwritten digits...
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">AI</span>
+                                <span class="blog-tag">Python</span>
+                                <span class="blog-tag">TensorFlow</span>
+                            </div>
+                            <button class="btn btn-small btn-outline">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <span class="blog-icon">🎮</span>
+                            </div>
+                            <div class="blog-date">Dec 10, 2024</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Creating Retro Games with Modern Tools</h3>
+                            <p class="blog-excerpt">
+                                How I combined nostalgic 8-bit aesthetics with contemporary web technologies to create
+                                engaging browser-based games...
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">GameDev</span>
+                                <span class="blog-tag">JavaScript</span>
+                                <span class="blog-tag">Canvas</span>
+                            </div>
+                            <button class="btn btn-small btn-outline">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <span class="blog-icon">🔧</span>
+                            </div>
+                            <div class="blog-date">Dec 5, 2024</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">IoT Adventures: Smart Home on a Budget</h3>
+                            <p class="blog-excerpt">
+                                Building a comprehensive home automation system using Arduino, Raspberry Pi, and a lot of
+                                creativity (and coffee)...
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">IoT</span>
+                                <span class="blog-tag">Arduino</span>
+                                <span class="blog-tag">Hardware</span>
+                            </div>
+                            <button class="btn btn-small btn-outline">Read More</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-text">Let's Chat</span>
+                    <div class="title-underline"></div>
+                </h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <h3>Send a Message</h3>
+                            <p>Ready to collaborate on something awesome? Drop me a line!</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">🌐</div>
+                            <h3>Find me</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/roryTheGnome" class="social-link" title="GitHub">
+                                    <span class="social-icon">🐙</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ödül-kafadar-914651253" class="social-link" title="LinkedIn">
+                                    <span class="social-icon">💼</span>
+                                </a>
+                                <a href="https://open.spotify.com/user/31ydogjlgwvrpmsriq6vwvudibba?si=31aa1947906f4ad6" class="social-link" title="Spotify">
+                                    <span class="social-icon">🎧</span>
+                                </a>
+                                <a href="https://discord.com/users/405808913578065923" class="social-link" title="Discord">
+                                    <span class="social-icon">🎮</span>
+                                </a>
+                                <a href="https://www.instagram.com/rory_the_resplendent_gnome?igsh=Z3FiZGY4bWkxN256" class="social-link" title="Instagram">
+                                    <span class="social-icon">📸</span>
+                                </a>
+                                <a href="https://gnomes-eyes.netlify.app/" class="social-link" title="Gnome's Eyes Website">
+                                    <span class="social-icon">👁️</span>
+                                </a>
+                                <a href="mailto:s29991@pjwstk.edu.pl" class="social-link" title="Email">
+                                    <span class="social-icon">✉️</span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">⚡</div>
+                            <h3>Quick Response</h3>
+                            <p>I usually respond within 24 hours unless im stressing about finals</p>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                            <input type="hidden" name="form-name" value="contact">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Shoot</span>
+                                <div class="btn-particles"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Rory the Gnome. Crafted with ❤️ and lots of ☕</p>
+                    <p class="footer-subtitle">May the code be with you.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" onclick="downloadResume()">Resume</a>
+                    <!--<a href="#blog">Blog</a>-->
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Easter Egg Modal -->
+    <div id="easter-egg-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>🎉 You found an Easter Egg! 🎉</h3>
+            <p>Congratulations, fellow code explorer! You've discovered one of my hidden secrets.</p>
+            <p>Here's a fun fact: This portfolio was built with over 1000 lines of custom code and zero templates!</p>
+            <button class="btn btn-primary" onclick="closeModal()">Awesome!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
